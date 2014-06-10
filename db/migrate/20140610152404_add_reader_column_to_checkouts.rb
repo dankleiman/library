@@ -1,6 +1,6 @@
 class AddReaderColumnToCheckouts < ActiveRecord::Migration
  def up
-    add_column :checkouts, :reader_id, :integer, null: false
+    add_column :checkouts, :reader_id, :integer
   end
 
   def down

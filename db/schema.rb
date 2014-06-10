@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20140610170033) do
     t.integer  "book_id",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "reader_id",  null: false
+    t.integer  "reader_id"
   end
 
   create_table "readers", force: true do |t|
