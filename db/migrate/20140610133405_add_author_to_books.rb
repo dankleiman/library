@@ -1,10 +1,10 @@
 class AddAuthorToBooks < ActiveRecord::Migration
   def up
-    add_column :author
+    add_column :books, :author, :string
   end
 
   def down
-    remove_column :author
+    remove_column :books, :author, :string
   end
 
 end
