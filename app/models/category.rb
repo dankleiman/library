@@ -1,3 +1,6 @@
 class Category < ActiveRecord::Base
-  validates :name, presence: true, unique: true
+  has_many :categorizations
+  has_many :books, through: :categorizations
+
+  validates :name, presence: true, uniquenesse: true
 end
